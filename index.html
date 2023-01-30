@@ -7,11 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" type="image/svg+xml" href="img/icon.svg">
    <link rel="icon" type="image/png" href="img/logo.png">
-   <style>
-      label {
-         display: block;
-      }
-   </style>
    <title>Go</title>
 </head>
 
@@ -44,68 +39,103 @@
    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
       <h2>Забронировать</h2>
       <fieldset>
-         <label for="">
-            <input type="radio" name="80'sVibes" id="">80's vibes
-            <input type="radio" name="StarWars" id="">Star wars
-            <input type="radio" name="WildWest" id="">Wild west
-            <input type="radio" name="NeonStyle" id="">Neon style
+         <label>
+            <input type="radio" name="cinema" value="80'sVibes">80's vibes
+         </label>
+         <label>
+            <input type="radio" name="cinema" value="StarWars">Star wars
+         </label>
+         <label>
+            <input type="radio" name="cinema" value="WildWest">Wild west
+         </label>
+         <label>
+            <input type="radio" name="cinema" value="NeonStyle">Neon style
          </label>
       </fieldset>
       <fieldset>
          <legend>Собери набор развлечений</legend>
          <fieldset>
             <legend>Приставка:</legend>
-            <input type="radio" name="PlayStation" id="">PlayStation
-            <input type="radio" name="SegaMegaDrive" id="">Sega Mega Drive
-            <input type="radio" name="X-boxOneS" id="">X-box One S
-            <input type="radio" name="Dendy" id="">Dendy
+            <label>
+               <input type="radio" name="Prefix" value="PlayStation">PlayStation
+            </label>
+            <label>
+               <input type="radio" name="Prefix" value="SegaMegaDrive">Sega Mega Drive
+            </label>
+            <label>
+               <input type="radio" name="Prefix" value="X-boxOneS">X-box One S
+            </label>
+            <label>
+               <input type="radio" name="Prefix" value="Dendy">Dendy
+            </label>
          </fieldset>
          <fieldset>
             <legend>Настольные игры:</legend>
-            <input type="checkbox" name="Jenga" id="">Jenga
-            <input type="checkbox" name="Monopoly" id="">Monopoly
-            <input type="checkbox" name="Munchkin" id="">Манчкин
-            <input type="checkbox" name="Alias" id="">Alias
+            <label>
+               <input type="checkbox" name="TableGames" value="Jenga">Jenga
+            </label>
+            <label>
+               <input type="checkbox" name="TableGames" value="Monopoly">Monopoly
+            </label>
+            <label>
+               <input type="checkbox" name="TableGames" value="Munchkin">Манчкин
+            </label>
+            <label>
+               <input type="checkbox" name="TableGames" value="Alias">Alias
+            </label>
          </fieldset>
          <fieldset>
             <legend>Дополнительно:</legend>
-            <input type="checkbox" name="Karaoke" id="">Караоке
-            <input type="checkbox" name="VR" id="">VR
+            <label>
+               <input type="checkbox" name="Additionally" value="Karaoke">Караоке
+            </label>
+            <label>
+               <input type="checkbox" name="Additionally" value="VR">VR
+            </label>
          </fieldset>
       </fieldset>
       <fieldset>
          <legend>Выбери дату и время</legend>
-         <label for="">
+         <label>
             Дата*
-            <input type="date" name="Date" id="">
+            <input type="date" name="Date" required>
+         </label>
+         <label>
             Время*
-            <input type="time" name="Time" id="">
+            <input type="time" name="Time" required>
          </label>
-         <label for="">
+         <br>
+         <label>
             Количество человек*
-            <input type="number" name="NumberOfPeople" id="">
+            <input type="number" name="NumberOfPeople" required>
          </label>
-         <label for="">
+         <br>
+         <label>
             Имя*
-            <input type="text" name="Name" id="">
+            <input type="text" name="Name" required>
          </label>
-         <label for="">
+         <br>
+         <label>
             Фамилия*
-            <input type="text" name="Surname" id="">
+            <input type="text" name="Surname" required>
          </label>
-         <label for="">
+         <br>
+         <label>
             Номер телефона*
-            <input type="tel" name="Phone" id="">
+            <input type="tel" name="Phone" required>
          </label>
-         <label for="">
-            <input type="checkbox" name="Age" id="">
+         <br>
+         <label>
+            <input type="checkbox" name="Age">
             Я старше 18 лет
          </label>
 
       </fieldset>
       <button type="submit">Забронировать</button>
-      <input type="checkbox" name="Agree" id="">
-      Согласен на обработку данных
+      <label>
+         <input type="checkbox" name="Agree" required>
+         Согласен на обработку данных
+      </label>
    </form>
    <h2>О нас</h2>
    <p>
