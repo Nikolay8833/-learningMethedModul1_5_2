@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+   <link rel="icon" type="image/png" href="img/logo.png">
+   <style>
+      label {
+         display: block;
+      }
+   </style>
+   <title>Go</title>
+</head>
+
+<body>
+   <img src="./img/logo.svg" alt="Логотип GO">
+   <h2>Меню</h2>
+   <ul>
+      <li><a href="#">Залы</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Бронь</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Контакты</a></li>
+   </ul>
+   <h2>У нас есть все для классного отдыха с друзьями!</h2>
+   <ul>
+      <li><img src="./img/vr.png" alt="VR очки"><br>VR очки</li>
+      <li><img src="./img/audio.png" alt="Аудио-система"><br>Аудио-система 5.1 с отличным звуком</li>
+      <li>Караоке(4 микрофона)</li>
+      <li>Настольные игры</li>
+      <li>Кино сервисы Netflix, IVI, MegoGo,КиноПоиск, Okko</li>
+      <li>PlayStation 5</li>
+   </ul>
+   <h2>Наши залы</h2>
+   <ol>
+      <li>80's vibes</li>
+      <li>Star wars</li>
+      <li>Wild west</li>
+      <li>Neon style</li>
+   </ol>
+   <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <h2>Забронировать</h2>
+      <fieldset>
+         <label for="">
+            <input type="radio" name="80'sVibes" id="">80's vibes
+            <input type="radio" name="StarWars" id="">Star wars
+            <input type="radio" name="WildWest" id="">Wild west
+            <input type="radio" name="NeonStyle" id="">Neon style
+         </label>
+      </fieldset>
+      <fieldset>
+         <legend>Собери набор развлечений</legend>
+         <fieldset>
+            <legend>Приставка:</legend>
+            <input type="radio" name="PlayStation" id="">PlayStation
+            <input type="radio" name="SegaMegaDrive" id="">Sega Mega Drive
+            <input type="radio" name="X-boxOneS" id="">X-box One S
+            <input type="radio" name="Dendy" id="">Dendy
+         </fieldset>
+         <fieldset>
+            <legend>Настольные игры:</legend>
+            <input type="checkbox" name="Jenga" id="">Jenga
+            <input type="checkbox" name="Monopoly" id="">Monopoly
+            <input type="checkbox" name="Munchkin" id="">Манчкин
+            <input type="checkbox" name="Alias" id="">Alias
+         </fieldset>
+         <fieldset>
+            <legend>Дополнительно:</legend>
+            <input type="checkbox" name="Karaoke" id="">Караоке
+            <input type="checkbox" name="VR" id="">VR
+         </fieldset>
+      </fieldset>
+      <fieldset>
+         <legend>Выбери дату и время</legend>
+         <label for="">
+            Дата*
+            <input type="date" name="Date" id="">
+            Время*
+            <input type="time" name="Time" id="">
+         </label>
+         <label for="">
+            Количество человек*
+            <input type="number" name="NumberOfPeople" id="">
+         </label>
+         <label for="">
+            Имя*
+            <input type="text" name="Name" id="">
+         </label>
+         <label for="">
+            Фамилия*
+            <input type="text" name="Surname" id="">
+         </label>
+         <label for="">
+            Номер телефона*
+            <input type="tel" name="Phone" id="">
+         </label>
+         <label for="">
+            <input type="checkbox" name="Age" id="">
+            Я старше 18 лет
+         </label>
+
+      </fieldset>
+      <button type="submit">Забронировать</button>
+      <input type="checkbox" name="Agree" id="">
+      Согласен на обработку данных
+   </form>
+   <h2>О нас</h2>
+   <p>
+      Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной
+      части города.
+   </p>
+   <p>
+      Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+      разработками со всего мира.
+   </p>
+   <blockquote>
+      <p><strong>GAME OVER</strong> - это место незабываемых впечатлений</p>
+      <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+   </blockquote>
+   <h2>Контакты</h2>
+   <p>г. Москва ул. Аквамарина, 16</p>
+   <a href="tel:89509302893">8(950)930-28-93</a>
+   <br>
+   <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+   <ul>
+      <li><a href="#">Vkontakte</a></li>
+      <li><a href="#">Telegram</a></li>
+   </ul>
+</body>
+
+</html>
